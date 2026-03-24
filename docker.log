@@ -1,0 +1,69 @@
+    1  dockes ps
+    2  docker ps
+    3  docker ps -a
+    4  docker rm student-web-11
+    5  docker rm student-web
+    6  docker rm student-web-1
+    7  docker rm -f student-web-1
+    8  docker ps
+    9  docker rm -f student-db-1
+   10  docker image list
+   11  docker rm -f postgres
+   12  docker rmi postgres
+   13  docker rmi obraz
+   14  docker image list
+   15  docker rmi student-web
+   16  docker image list
+   17  docker rmi -f postgres
+   18  docker rmi -f postgres:latest
+   19  docker image list
+   20  docker ps
+   21  docker clear
+   22  clear
+   23  git clone https://github.com/grochotAGH/test_docker_jpai.git
+   24  cd test_docker_jpai
+   25  ls
+   26  nano package.json
+   27  nano app.js
+   28  docker build -t kolokwium:latest .
+   29  docker rmi kolokwium:latest
+   30  nano Dockerfile
+   31  docker build -t kolokwium:latest .
+   32  docker run -d -p 3000:3000 --name kontener kolowium:latest 
+   33  docker image list
+   34  docker run -d -p 3000:3000 --name kontener kolowium
+   35  docker build -t kolokwium:latest .
+   36  docker run -d -p 3000:3000 --name kontener kolowium:latest
+   37  docker image list
+   38  docker run -d -p 3000:3000 --name kontener kolokwium:latest
+   39  curl -f http://localhost:3000/
+   40  docker rm -f kontener
+   41  docker rmi kolokwium:latest
+   42  history | grep docker | tee docker.log
+   43  git add docker.log
+   44  ls
+   45  clear
+   46  cd ..
+   47  git clone https://github.com/murbanska25/projekt-git.git
+   48  cd test_docker_jpai
+   49  ls
+   50  cd ..
+   51  ls
+   52  clear
+   53  git clone https://github.com/murbanska25/jpai_kartkowka_gr2.git
+   54  cd jpai_kartkowka_gr2
+   55  ls
+   56  nano app.js
+   57  nano Dockerfile
+   58  docker build -t zaliczenie:v3 .
+   59  docker run -d -p 4012:3000 --name kontener zaliczenie:v3
+   60  docker image list
+   61  nano Dockerfile
+   62  docker build -t zaliczenie:v3 .
+   63  docker image list
+   64  docker run -d -p 4012:3000 --name kontener zaliczenie:v3
+   65  curl -f http://localhost:4012/
+   66  docker ps
+   67  docker rm -f kontener
+   68  docker rmi -f zaliczenie:v3
+   69  history | tee docker.log
